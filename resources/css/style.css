@@ -1,0 +1,228 @@
+body{
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: helvetica, sans-serif;
+}
+
+header {
+  background-image: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 1rem;
+  height: 30rem;
+}
+
+.container{
+  max-width: 960px;
+  margin: auto;
+}
+
+nav{
+  background-color:cadetblue;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav div{
+  display: flex;
+  align-items: center;
+}
+
+nav div img{
+  height: 1.5rem;
+  padding: 0 1rem 0 2rem;
+}
+
+.menu{
+  padding: 1rem 2rem;
+}
+
+.menu ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu ul li{
+  padding: 1rem 2rem 1rem 0;
+}
+
+h1{
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: .67rem 0;
+}
+
+.flex{
+  display: flex;
+}
+
+header .flex{
+  justify-content: flex-end;
+}
+
+.main-banner{
+  padding: 0.75rem 5rem;
+  background-color: white;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  line-height: 2.4rem;
+}
+
+.supporting{
+  display: flex;
+  justify-content:center;
+}
+
+.feature{
+  display: flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+  text-align:center;
+  margin: 3rem;
+  width: 5rem;
+}
+
+.feature img{
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.title{
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  color: white;
+  max-width: 10rem;
+}
+
+div.info p{
+  padding: 1rem 0;
+}
+
+.info{
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 4rem;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  background-color: azure;
+  padding: 4rem 2rem;
+}
+
+footer img{
+  height:1.5rem;
+  margin-right: 1rem;
+  margin-left: 2rem;
+}
+
+.truncated-menu{
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    height: 22rem;
+    padding-top: 0;
+  }
+
+  nav.container {
+    max-width: 100%;
+  }
+
+  .main-banner {
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .main-banner h1 {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .menu ul {
+    display: none;
+  }
+
+  .menu ul.truncated-menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  header div span {
+    display: none;
+  }
+
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .main-banner {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 9rem auto 0 auto;
+    text-align: center;
+  }
+
+  .main-banner h1 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .supporting {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .service {
+    height: auto;
+    margin: .77rem;
+    font-size: .77rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .info {
+    width: 100%;
+  }
+
+  .info .title {
+    width: 100%;
+    max-width: none;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .info p {
+    padding: 1rem;
+    font-size: .77rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  footer {
+    justify-content: center;
+  }
+
+  footer div {
+    display: none;
+  }
+}
